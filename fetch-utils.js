@@ -41,11 +41,28 @@ export async function logout() {
 //     return error ? console.error(error) : data;
 // }
 export async function getWorkshops() {
-    const response = await client.from('workshops').select('*');
+    const response = await client.from('workshops').select('*, participants(*)');
     if (response.error) {
         console.error(response.error.message);
 
     } else {
         return response.data;
     } 
+}
+
+export async function deleteParticipant(id) {
+    //delete a single participant using the id argument
+
+    const response = await client.from('participants').delete().eq('id', id);
+
+    if (response.error) {
+        console.error(response.error.message);
+    } else {
+        return response.data;
+    }
+    return checkError(response);
+}
+
+function checkError({ data, error }) {
+    return error ? console.error(error) : data;
 }
