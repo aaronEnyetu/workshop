@@ -20,6 +20,12 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url('../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    
+    
 }
 
 main {
@@ -54,7 +60,7 @@ header {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -128,4 +134,8 @@ footer {
 
 .auth-container button {
     margin: 10px;
+}
+h1 {
+    font-size: 1rem;
+    font-weight: bold;
 }
