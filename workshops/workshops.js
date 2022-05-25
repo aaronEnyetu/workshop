@@ -11,7 +11,7 @@ logoutButton.addEventListener('click', () => {
 
 async function displayWorkshops() {
     //fetch workshops from supabase
-    const div = document.querySelector('.workshops-container');
+    const div = document.querySelector('.workshop-container');
     div.textContent = '';
     const workshops = await getWorkshops();
 

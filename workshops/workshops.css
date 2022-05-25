@@ -1,0 +1,33 @@
+.workshop {
+    width: 50vw;
+    border: 3px solid var(--color5);
+    padding: 10px;
+    margin: 10px;
+    border: solid 2px rgb(146, 9, 50);
+    background: rgb(110, 203, 247);
+}
+
+.workshop li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+}
+.workshop li:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+}
+
+.workshop li:hover::after {
+    padding: 0px 5px;
+    content: '❌';
+}
+
+.workshop-container {
+    width: 30%;
+    min-width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

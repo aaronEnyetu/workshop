@@ -9,14 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="./workshops.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
+        <div>
+            <figure>
+                <img src="../assets/Workshop.png" />
+            </figure>
+        </div>
         <div class="gutter-right logo">
-            <img src="../assets/big-logo.png" />
+            <a href="../workshops" >See all workshops</a>
+            <a href="../create" >Add a workshop</a>
         </div>
     </header>    
     <button id="logout">Logout</button>
@@ -24,11 +30,15 @@
         <h1>You are logged in!</h1>
         <h2>Here are the Workshops</h2>
         <div class=" workshop-container"></div>
+
+        <!-- <ul>
+            <li>Aaron Enyetu</li>
+        </ul> -->
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
-    <script type="module" src="./workshops-page.js"></script>
+    <script type="module" src="./workshops.js"></script>
 </body>
 
 </html>
